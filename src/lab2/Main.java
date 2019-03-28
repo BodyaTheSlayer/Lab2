@@ -1,8 +1,5 @@
 package lab2;
 
-/**
- * Created by asus on 06.03.2019.
- */
 public class Main {
     public static void main(String[] args) {
         int size = args.length;
@@ -22,15 +19,15 @@ public class Main {
         System.out.print("Cортированный массив: ");
         printArray(array);  // Печать сортированного массива
 
-        ArraySorter.sortInsert(array);                 // Сортировка массива
+        ArraySorter.sortSelect(array);                 // Сортировка массива
         System.out.println();
         System.out.print("Cортированный массив методом вставки: ");
         printArray(array);  // Печать сортированного массива
     }
 
     private static void printArray(double []array){ //Метод вывода массива
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
+        for (double element: array) {
+            System.out.print(element + " ");
         }
     }
 }

@@ -1,13 +1,10 @@
 package lab2;
 
-/**
- * Created by asus on 06.03.2019.
- */
 public class ArraySorter {
     public static void sort(double[] array) {  //Метод сортировки
-        int i = 0;
+        int i;
         boolean hasSwapped = true;
-        while (hasSwapped == true) {
+        while (hasSwapped) {
             int nPairs = array.length;
             hasSwapped = false;
             nPairs--;
@@ -37,7 +34,7 @@ public class ArraySorter {
         return array;
     }
 
-    public static double[] sortInsert(double[] array) {//Метод сортировки
+    public static double[] sortSelect(double[] array) {//Метод сортировки
         int minIdx;
         for (int i = 0;i < array.length; i++) {
             double min = array[i];
